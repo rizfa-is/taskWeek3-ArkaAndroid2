@@ -7,6 +7,14 @@ fun main () {
     ( Memakai Math Operator & Scope Function )
 
     Algoritma :
+    1. Start
+    2. Buat variabel x = 10, y = 20
+    3. Print x & y sebelum ditukar
+    4. Ganti nilai x dengan nilai x - y
+    5. Ganti nilai y dengan nilai x + y
+    6. Ganti nilai x dengan nilai y - x
+    7. Print x & y sesudah ditukar
+    8. Finish
 
     */
 
@@ -17,15 +25,14 @@ fun main () {
     println("Nilai x sebelum ditukar : $x")
     println("Nilai y sebelum ditukar : $y")
 
-    with(x) {
-        x = y
-        y = this
-    }
+    x = x - y
+    y = x + y
+    x = y - x
 
-    println("============================")
+    println("=============================")
     println("Nilai x sesudah ditukar : $x")
     println("Nilai y sesudah ditukar : $y")
-    println("=============================")
+    println("========++++++++++++=========")
 
 //    Answer 2
     var x2 = 10
@@ -39,7 +46,7 @@ fun main () {
     println("=============================")
     println("Nilai x2 sesudah ditukar : $x2")
     println("Nilai y2 sesudah ditukar : $y2")
-    println("=============================")
+    println("========++++++++++++=========")
 
 //    Answer 3
     var x3 = 10
@@ -48,12 +55,13 @@ fun main () {
     println("Nilai x3 sebelum ditukar : $x3")
     println("Nilai y3 sebelum ditukar : $y3")
 
-    x3 = x3 - y3
-    y3 = x3 + y3
-    x3 = y3 - x3
+    with(x3) {
+        x3 = y3
+        y3 = this
+    }
 
-    println("=============================")
+    println("============================")
     println("Nilai x3 sesudah ditukar : $x3")
     println("Nilai y3 sesudah ditukar : $y3")
-    println("=============================")
+    println("========++++++++++++=========")
 }

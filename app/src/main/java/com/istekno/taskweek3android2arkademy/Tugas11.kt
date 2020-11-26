@@ -8,6 +8,18 @@ fun main () {
     Deteksi palindrom, cek apakah kata tersebut palindrom atau bukan.
 
     Algoritma :
+    1. Start
+    2. Masukkan kata, convert ke lowercase
+    3. Buat variabel textNow
+    4. Buat variabel i = jumlah huruf - 1
+    5. Masuk looping, cek apakah i >= 0
+    6. Jika iya, isi textNow dengan huruf ke i dari kata
+    7. i dikurangi 1
+    8. Lakukan looping nomor 5 - 7 hingga bernilai false
+    9. Cek textNow = text
+    10. Jika iya, cetak text is palindrome
+    11. Jika tidak, cetak text isn't palindrome
+    12. Finish
 
     */
 
@@ -25,6 +37,6 @@ fun main () {
     if (textNow == text) {
         println("$text is palindrome")
     } else {
-        println("$text is non palindrome")
+        println("$text isn't palindrome")
     }
 }

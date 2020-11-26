@@ -12,6 +12,12 @@ fun main () {
     Buat fungsi menghitung umur dengan input parameter berupa tahun lahir
 
     Algoritma :
+    1. Start
+    2. Masukkan tahun lahir
+    3. Buat variabel dengan nilai tahun sekarang
+    4. Tahun sekarang - tahun lahir
+    5. Cetak hasil pengurangan, "Age hasil years old"
+    6. Finish
 
     */
 

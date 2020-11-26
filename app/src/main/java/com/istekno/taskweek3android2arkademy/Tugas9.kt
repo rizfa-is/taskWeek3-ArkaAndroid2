@@ -2,12 +2,25 @@ package com.istekno.taskweek3android2arkademy
 
 fun main () {
     /*
-       Q :
-       Buat fungsi membuat segitiga terbalik dimana barisnya sesuai dengan input angka
+    Q :
+    Buat fungsi membuat segitiga terbalik dimana barisnya sesuai dengan input angka
 
-       Algoritma :
+    Algoritma :
+    1. Start
+    2. Masukkan sejumlah angka
+    3. Buat variabel numb = jumlah angka
+    4. Masuk for loop.
+    5. Buat variabel a = iterator
+    6. Buat variabel b = 1
+    7. Masuk looping, cek apakah a > 0
+    8. Jika iya, cetak b
+    9. a dikurangi 1, b ditambah 1
+    10. Lakukan looping nomor 7 - 9 hingga bernilai false
+    11. Cetak line baru
+    13. Lakukan looping nomor 4 - 11 hingga bernilai false
+    14. Finish
 
-       */
+    */
 
 //    Utility
     println("Input number : ")

@@ -6,6 +6,14 @@ fun main () {
     Buat fungsi menghitung luas lingkaran dengan input parameter berupa jari-jari
 
     Algoritma :
+    1. Start
+    2. Masukkan nilai jari-jari
+    3. Cek apakah jari-jari habis dibagi 7
+    4. Jika iya, gunakan phi = 22/7
+    5. Jika tidak, gunakan phi = 3.14
+    6. Hitung luas dengan rumus = phi x jari-jari x jari-jari
+    7. Cetak hasil perhitungan luas
+    8. Finish
 
     */
 

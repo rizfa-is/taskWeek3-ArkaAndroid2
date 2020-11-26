@@ -6,6 +6,8 @@ fun main () {
     Reverse word, ubah urutan kata dalam kalimat menjadi terbalik
 
     Algoritma :
+    1. Start
+    2.
 
     */
 

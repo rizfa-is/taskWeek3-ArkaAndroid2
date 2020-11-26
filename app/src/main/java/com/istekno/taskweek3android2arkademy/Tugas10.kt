@@ -1,22 +1,34 @@
 package com.istekno.taskweek3android2arkademy
 
 fun main () {
-/*
-       Q :
-       Buat fungsi menampilkan huruf vokal dan konsonan sesuai contoh
+    /*
+    Q :
+    Buat fungsi menampilkan huruf vokal dan konsonan sesuai contoh
 
-       Algoritma :
+    Algoritma :
+    1. Start
+    2. Masukkan kata atau kalimat
+    3. Buat array/list huruf vokal, lower dan upper case
+    4. Buat mutable list
+    5. Lakukan looping untuk mengisi list dengan huruf dari kata/kalimat
+    6. Lakukan looping untuk cek apakah list huruf vokal mengandung huruf dalam list kata
+    7. Jika iya cetak hurufnya
+    8. Jika tidak, lanjut cek hingga false.
+    9. Lakukan looping untuk cek apakah list huruf vokal tidak mengandung huruf dalam list kata
+    10. Jika iya cetak hurufnya
+    11. Jika tidak, lanjut cek hingga false.
+    12. Finish
 
-       Features :
-       1. Implement handling lower/upper case in all function.
-       2. Normal.
-       3. Handle word/sentence.
-       4. Handle sorting ascendingly for vowel & consonant before print by default
+    Features :
+    1. Implement handling lower/upper case in all function.
+    2. Normal.
+    3. Handle word/sentence.
+    4. Handle sorting ascendingly for vowel & consonant before print by default
 
-       Attention :
-       1. In fourth features, you migth be found any unsorting letter cause it sorted by upper/lower case not alphabet
+    Attention :
+    1. In fourth features, you migth be found any unsorting letter cause it sorted by upper/lower case not alphabet
 
-       */
+    */
 
 //    Utility
     println("Input word : ")
