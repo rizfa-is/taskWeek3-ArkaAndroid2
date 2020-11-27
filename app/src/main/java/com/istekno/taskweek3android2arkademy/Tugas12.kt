@@ -1,5 +1,3 @@
-package com.istekno.taskweek3android2arkademy
-
 fun main () {
     /*
     Q :
@@ -17,6 +15,11 @@ fun main () {
     val split = str.split(" ").size
 
 //    Answer 1
+    reverseSentence(str, split)
+}
+
+//    Answer 1
+fun reverseSentence(str: String, split: Int) {
     var i = str.length - 1
     var count: Int
     var last = i + 1
@@ -39,11 +42,13 @@ fun main () {
     } else {
         println("Minimum 2 words")
     }
+}
 
 //    Answer 2
+fun reverseSentence2(str: String, split: Int) {
     if (str != " " && split >= 2) {
-        str.split(" ").reversed().joinToString(" ")
-        println(str)
+        val newStr = str.split(" ").reversed().joinToString(" ")
+        println(newStr)
     } else {
         println("Minimum 2 words")
     }

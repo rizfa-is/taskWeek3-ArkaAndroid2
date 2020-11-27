@@ -1,4 +1,4 @@
-package com.istekno.taskweek3android2arkademy
+import java.lang.Exception
 
 fun main () {
     /*
@@ -18,12 +18,24 @@ fun main () {
     */
 
 //    Utility
-    println("Input radius : ")
-    val radius = readLine()!!.toDouble()
+    try {
+        println("Input radius : ")
+        val input = readLine()
+
+        if (input != "") {
+            val radius = input!!.toDouble()
+//    Answer
+            println("Round area is ${roundArea(radius)}")
+        } else if (input == "") {
+            println("Field couldn't be empty!")
+        }
+    } catch (e: Exception) {
+        println("Please, input positive fraction/integer only!")
+    }
+}
 
 //    Answer 1
-    val phi : Double = if (radius % 7 == 0.0) (22/7).toDouble() else 3.14
-    fun roundArea(rad: Double) : Double = phi * Math.pow(rad, 2.0)
-
-    println(roundArea(radius))
+fun roundArea(rad: Double) : Double {
+    val phi : Double = if (rad % 7 == 0.0) (22/7).toDouble() else 3.14
+    return phi * Math.pow(rad, 2.0)
 }

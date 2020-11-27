@@ -1,4 +1,4 @@
-package com.istekno.taskweek3android2arkademy
+import java.lang.Exception
 
 fun main () {
     /*
@@ -23,10 +23,24 @@ fun main () {
     */
 
 //    Utility
-    println("Input number : ")
-    val form = readLine().toString().trim{it <= '0'}
+    try {
+        println("Input number : ")
+        val input = readLine()
+
+        if (input != "") {
+            val form = input.toString().trim{it <= '0'}
+//    Answer 1
+            deretAngka(form)
+        } else if (input == "") {
+            println("Field couldn't be empty!")
+        }
+    } catch (e: Exception) {
+        println("Please, input integer only!")
+    }
+}
 
 //    Answer 1
+fun deretAngka(form: String) {
     val str = form.split("0")
     val strNew = mutableListOf<String>()
 

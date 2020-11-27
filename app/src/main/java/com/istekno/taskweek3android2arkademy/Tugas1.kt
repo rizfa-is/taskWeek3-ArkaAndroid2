@@ -1,5 +1,3 @@
-package com.istekno.taskweek3android2arkademy
-
 fun main () {
     /*
     Q :

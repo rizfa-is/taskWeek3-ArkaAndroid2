@@ -1,5 +1,3 @@
-package com.istekno.taskweek3android2arkademy
-
 import java.util.*
 
 fun main () {
@@ -23,9 +21,16 @@ fun main () {
 
     */
 
-//    Answer 1
+//    Utility
     println("Input word : ")
     val text = readLine().toString().toLowerCase(Locale.ROOT)
+
+//    Answer
+    palindrome(text)
+}
+
+//    Answer 1
+fun palindrome(text: String) {
     var textNow = ""
     var i = text.length - 1
 

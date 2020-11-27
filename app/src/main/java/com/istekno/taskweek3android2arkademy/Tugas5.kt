@@ -1,4 +1,4 @@
-package com.istekno.taskweek3android2arkademy
+import java.lang.Exception
 
 fun main () {
     /*
@@ -16,13 +16,24 @@ fun main () {
     */
 
 //    Utility
-    println("Input base : ")
-    val base = readLine()!!.toDouble()
-    println("Input height : ")
-    val height = readLine()!!.toDouble()
+    try {
+        println("Input base : ")
+        val numb1 = readLine()
+        println("Input height : ")
+        val numb2 = readLine()
+
+        if (numb1 != "" || numb2 != "") {
+            val base = numb1!!.toDouble()
+            val height = numb2!!.toDouble()
+//    Answer
+            println("Circle area is ${triangleArea(base, height)}")
+        } else if (numb1 == "" || numb2 == "") {
+            println("Field couldn't be empty!")
+        }
+    } catch (e: Exception) {
+        println("Please, input positive fraction/integer only!")
+    }
+}
 
 //    Answer 1
-    fun triangleArea(base: Double, height: Double) : Double = 0.5 * base * height
-
-    println(triangleArea(base, height))
-}
+fun triangleArea(base: Double, height: Double) : Double = 0.5 * base * height

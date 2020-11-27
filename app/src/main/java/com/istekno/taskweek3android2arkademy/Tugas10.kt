@@ -1,4 +1,4 @@
-package com.istekno.taskweek3android2arkademy
+import java.lang.Exception
 
 fun main () {
     /*
@@ -31,23 +31,26 @@ fun main () {
     */
 
 //    Utility
-    println("Input word : ")
-    val form = readLine().toString()
-    val vowel = arrayOf('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')
+    try {
+        println("Input text : ")
+        val input = readLine().toString()
+        val vowel = arrayOf('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')
 
-//    Answer 1
-    println("=== Answer 1 ===")
-    printWords(form, vowel)
-    println()
+        if (input != "") {
 
-//    Answer 2
-    println("=== Answer 2 ===")
-    printWords2(form, vowel)
-    println()
+//    Answer
+            println("=== Answer 1 ===")
+            printWords3(input, vowel)
+        } else if (input == "") {
+            println("Field couldn't be empty!")
+        }
+    } catch (e: Exception) {
+        println("Please, input string only!")
+    }
 
-//    Answer 3
-    println("=== Answer 3 ===")
-    printWords3(form, vowel)
+//    Utility
+
+
 }
 
 //    Answer 1 (Normal)
@@ -64,7 +67,7 @@ fun printWords(string: String, vowel: Array<Char>) {
     }
 
     for (i in 0 until word.size) {
-        if (!vowel.contains(word[i])){
+        if (!(vowel.contains(word[i]))){
             println(word[i])
         }
     }
@@ -85,7 +88,7 @@ fun printWords2(string: String, vowel: Array<Char>) {
     }
 
     for (i in 0 until word.size) {
-        if (!vowel.contains(word[i])){
+        if (!(vowel.contains(word[i]))){
             println(word[i])
         }
     }
@@ -111,7 +114,7 @@ fun printWords3(string: String, vowel: Array<Char>) {
     }
 
     for (i in 0 until word.size) {
-        if (!vowel.contains(word[i])){
+        if (!(vowel.contains(word[i]))){
             str3.add(word[i])
         }
     }

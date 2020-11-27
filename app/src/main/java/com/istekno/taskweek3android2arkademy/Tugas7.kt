@@ -1,5 +1,4 @@
-package com.istekno.taskweek3android2arkademy
-
+import java.lang.Exception
 import java.util.*
 import java.util.concurrent.TimeUnit
 
@@ -25,31 +24,43 @@ fun main () {
     */
 
 //    Utility
-    println("Input year : ")
-    val year = readLine()!!.toInt()
+    try {
+        println("Input year : ")
+        val input = readLine()
+
+        if (input != "") {
+            val year = input!!.toInt()
+//    Answer
+            leapYear(year)
+        } else if (input == "") {
+            println("Field couldn't be empty!")
+        }
+    } catch (e: Exception) {
+        println("Please, input positive integer only!")
+    }
+}
 
 //    Answer 1
-    fun leapYear(year: Int) {
-        if (year % 4 == 0) {
-            if (year % 100 == 0) {
-                if (year % 400 == 0) {
-                    println("$year tahun kabisat")
-                } else {
-                    println("$year bukan tahun kabisat")
-                }
-            } else {
+fun leapYear(year: Int) {
+    if (year % 4 == 0) {
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
                 println("$year tahun kabisat")
+            } else {
+                println("$year bukan tahun kabisat")
             }
         } else {
-            println("$year bukan tahun kabisat")
+            println("$year tahun kabisat")
         }
+    } else {
+        println("$year bukan tahun kabisat")
     }
-    leapYear(year)
+}
 
 //    Answer 2
+fun leapYear2(year: Int) {
     val startDate = Date("1/1/$year").time
     val endDate = Date("12/31/$year").time
     val sum = (TimeUnit.DAYS.convert((endDate - startDate), TimeUnit.MILLISECONDS)).toInt() + 1
-    fun leapYear2(year: Int) = if (sum == 366) println("Tahun kabisat") else println("Bukan tahun kabisat")
-//    leapYear2(year)
+    if (sum == 366) println("$year tahun kabisat") else println("$year bukan tahun kabisat")
 }
