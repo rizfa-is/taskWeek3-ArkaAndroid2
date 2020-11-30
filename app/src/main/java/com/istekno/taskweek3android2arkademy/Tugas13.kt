@@ -20,6 +20,7 @@ fun main () {
     12. Cetak strNew
     13. Finish
 
+// Notice  = tointegerornull ?
     */
 
 //    Utility
