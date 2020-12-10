@@ -1,6 +1,6 @@
 # taskWeek3-ArkaAndroid2
 
-Algoritma -> File.kt
+Algoritma -> res/drawable
 
 Flowchart -> res/drawable
 
