@@ -1,25 +1,7 @@
 import java.lang.Exception
 
 fun main () {
-    /*
-    Q :
-    Buat fungsi menghitung rata-rata nilai dan menentukan grade nya
 
-    Algoritma :
-    1. Start
-    2. Masukkan semua nilai
-    3. Hitung rata-rata nya
-    4. Cek nilai rata-rata, masuk ke kelompok nilai mana
-    5. Jika masuk kelompok 90 - 100, cetak "Grade A"
-    6. Jika masuk kelompok 80 - 89, cetak "Grade B"
-    7. Jika masuk kelompok 70 - 79, cetak "Grade C"
-    8. Jika masuk kelompok 60 - 69, cetak "Grade D"
-    9. Jika masuk kelompok < 60, cetak "Grade E"
-    10. Finish
-
-    */
-
-//    Utility
     try {
         println("Input MTK value : ")
         val input1 = readLine()
@@ -36,7 +18,6 @@ fun main () {
             val eng = input3!!.toInt()
             val sci = input4!!.toInt()
 
-//    Answer
             val average = listOf(mtk, ind, eng, sci).average().toInt()
             grade(average)
         } else if (input1 == "" || input2 == "" || input3 == "" || input4 == "") {
@@ -47,7 +28,6 @@ fun main () {
     }
 }
 
-//    Answer 1
 fun grade(value: Int) = when (value) {
     in 90..100 -> println("Your average is $value and grade is A")
     in 80..89 -> println("Your average is $value and grade is B")

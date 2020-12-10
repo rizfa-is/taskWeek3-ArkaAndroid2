@@ -1,24 +1,12 @@
 fun main () {
-    /*
-    Q :
-    Reverse word, ubah urutan kata dalam kalimat menjadi terbalik
 
-    Algoritma :
-    1. Start
-    2.
-
-    */
-
-//    Utility
     println("Input sentence : ")
     val str = readLine().toString()
     val split = str.split(" ").size
 
-//    Answer 1
     reverseSentence(str, split)
 }
 
-//    Answer 1
 fun reverseSentence(str: String, split: Int) {
     var i = str.length - 1
     var count: Int
@@ -44,7 +32,6 @@ fun reverseSentence(str: String, split: Int) {
     }
 }
 
-//    Answer 2
 fun reverseSentence2(str: String, split: Int) {
     if (str != " " && split >= 2) {
         val newStr = str.split(" ").reversed().joinToString(" ")

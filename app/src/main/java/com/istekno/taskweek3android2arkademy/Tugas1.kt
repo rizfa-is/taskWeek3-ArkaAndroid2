@@ -1,21 +1,4 @@
 fun main () {
-    /*
-    Q :
-    Buat 2 variabel x = 10, y = 20. Kemudian tukarkan isi variabel tsb menjadi output x = 20, y = 10
-
-    Algoritma :
-    1. Start
-    2. Buat variabel x = 10, y = 20
-    3. Buat variabel ketiga, z = x
-    4. Print x & y sebelum ditukar
-    5. Ganti nilai x dengan nilai y
-    6. Ganti nilai y dengan nilai z
-    7. Print x & y sesudah ditukar
-    8. Finish
-
-    */
-
-//    Answer
     var x = 10
     var y = 20
     val z = x
@@ -31,7 +14,6 @@ fun main () {
     println("Nilai y sesudah ditukar : $y")
     println("=============================")
 
-//    Answer 2
     var x2 = 10
     var y2 = 20
 
